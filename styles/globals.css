@@ -8,3 +8,75 @@
     box-sizing: border-box;
     /* font-family: 'gordita_regular'; */
 }
+.bea{
+    color: #000;
+padding: 16px 26px;
+border: 2px solid #000;
+}
+.bea::before {
+    position: absolute;
+    content: "";
+    top: -16px;
+    height: 14px;
+    width: calc(100% + 3px);
+    left: 6px;
+    transform: skewX(-45deg);
+    border: 2px solid #000;
+    border-bottom: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.bea::after {
+    position: absolute;
+    content: "";
+    right: -16px;
+    height: calc(100% + 3px);
+    width: 15px;
+    top: -8px;
+    transform: skewY(-45deg);
+    border: 2px solid #000;
+    border-left: none;
+    border-top: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.bea:hover:after,
+.bea:hover:before {
+    background: #f3c755;
+    border-color: #f3c755;
+}
+.bea:hover {
+    border-color: transparent;
+}
+
+body .btn-eighteen {
+    font-size: 19px;
+    line-height: initial;
+    
+}
+body .btn-eighteen i {
+    font-size: 15px;
+}
+body .btn-eighteen:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 100%;
+    background: #000;
+}
+body .btn-eighteen a:hover {
+    color: #ff1292;
+}
+
+/*  media quarery */
+
+
+@media (max-width: 767px) {
+    .btn-twentyFour {padding: 10px 15px; font-size: 13px;}
+}
+
+@media (max-width: 575px) {
+    .btn-twentyFour {padding: 10px 15px; font-size: 12px;}
+}

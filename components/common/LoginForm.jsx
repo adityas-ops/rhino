@@ -1,7 +1,6 @@
 import { useState } from "react";
-import Head from "next/head";
 import Link from "next/link";
-
+import {BsEye,BsEyeSlash} from "react-icons/bs"
 function LoginForm() {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -38,13 +37,14 @@ function LoginForm() {
                 required
               />
               <span
-                className="absolute right-2 top-2 cursor-pointer"
+                className="absolute right-6 top-5 text-gray-400 cursor-pointer"
                 onClick={handleTogglePassword}
               >
                 {showPassword ? (
-                  <i className="far fa-eye"></i>
+                  <BsEye className="w-[20px] h-[20px]"/>
                 ) : (
-                  <i className="far fa-eye-slash"></i>
+                  
+                  <BsEyeSlash className="w-[20px] h-[20px]"/>
                 )}
               </span>
             </div>

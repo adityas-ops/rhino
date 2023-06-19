@@ -1,8 +1,12 @@
 import React from 'react'
+import Hero from './Hero'
 
 function LandingPage() {
   return (
-    <div className='w-full h-[60vh]'>LandingPage</div>
+   <>
+    <Hero/>
+    as
+   </>
   )
 }
 

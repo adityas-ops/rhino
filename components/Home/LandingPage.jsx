@@ -1,5 +1,7 @@
+import Link from "next/link";
 import React from "react";
 import Seo from "../common/Seo";
+import Accord from "./Accord";
 import CourseCategory from "./CourseCategory";
 import FeatureBook from "./FeatureBook";
 import Hero from "./Hero";
@@ -66,14 +68,21 @@ function LandingPage() {
               <div className="uppercase  text-lg  font-Gordita tracking-[2px] text-gray-400 mb-2">
                 CHoose your path
               </div>
-              <h2 className="text-6xl  font-Gordita font-medium text-black ">
+              <h2 className="text-6xl  font-Gordita font-medium mt-2 text-black ">
                 What’s your goal?
               </h2>
-              
+              <Accord />
+              <Link href="#">
+                <button className="mt-[40px]  py-3 px-10 rounded font-Gordita font-[500] bg-black text-white lg:mt-[50px]">
+                  Explorer All
+                </button>
+              </Link>
             </div>
 
             {/* second grid */}
-            <div></div>
+            <div>
+              
+            </div>
           </div>
         </div>
       </div>

@@ -28,6 +28,11 @@ module.exports = {
         'xl': '1200px',
         '2xl': '1440px',
       },
+        // background Image
+        backgroundImage: {
+          'feature':"url(/images/assets/bg-13.png)",
+          'feature2':"url(/images/assets/bg-14.svg)"
+        }
     }
   },
   plugins: [],

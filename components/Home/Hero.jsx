@@ -12,6 +12,7 @@ function Hero() {
         isOpen={isOpen}
         videoId="20QUNgFIrK0"
         onClose={() => setOpen(false)}
+        className="absolute"
       />
       <div className='relative pt-[10px] w-full h-full pb-[100px] lg:pt-[100px] md:pt-[50px]'>
       <img
@@ -51,7 +52,7 @@ function Hero() {
                       className="ms-3"
                     />
                   </Link>
-                  <div className="btn-eighteen relative inline-block text-black mt-5 ">
+                  <div className="btn-eighteen relative inline-block text-black mt-3 lg:mt-1 ml-4 ">
                     <a href="#" className="font-semibold">
                       Join for Free Now!
                     </a>

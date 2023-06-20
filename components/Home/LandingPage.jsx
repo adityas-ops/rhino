@@ -7,6 +7,7 @@ import CourseFeatured from "./CourseFeatured";
 import CourseFilter from "./CourseFilter";
 import FeatureBook from "./FeatureBook";
 import Hero from "./Hero";
+import HowToStartBlock from "./HowToStartBlock";
 
 function LandingPage() {
   return (
@@ -123,6 +124,9 @@ function LandingPage() {
           </div>
         </div>
       </div>
+      {/* feature section 5 */}
+      <HowToStartBlock />
+      
     </>
   );
 }

@@ -123,3 +123,38 @@ body .btn-eighteen a:hover {
 .card-style-nineteen:hover:before {
     opacity: 1;
 }
+
+.tab-content:before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    right: 0;
+    height: 305px;
+    background: url(/images/assets/bg-15.svg);
+    background-repeat: repeat-x;
+    z-index: -1;
+   width: 100%;
+}
+
+.activeStar{
+    color: #ffce4c;
+}
+.star{
+    color:#C4C4C4
+}
+
+/*  rotation  */
+.rotate {
+    animation: rotated 70s linear infinite;
+    -webkit-animation: rotated 70s linear infinite;
+}
+
+@keyframes rotated {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Rest of your CSS rules */
+.active{
+border: 1px solid black;
+}

@@ -4,6 +4,7 @@ import Seo from "../common/Seo";
 import Accord from "./Accord";
 import CourseCategory from "./CourseCategory";
 import CourseFeatured from "./CourseFeatured";
+import CourseFilter from "./CourseFilter";
 import FeatureBook from "./FeatureBook";
 import Hero from "./Hero";
 
@@ -74,7 +75,7 @@ function LandingPage() {
               </h2>
               <Accord />
               <Link href="#">
-                <button className="mt-[70px]  py-3  px-10 rounded font-Gordita font-[500] bg-black text-white lg:mt-[50px]">
+                <button className="mt-[70px] mb-[60px]  py-3  px-10 rounded font-Gordita font-[500] bg-black text-white lg:mt-[50px]">
                   Explorer All
                 </button>
               </Link>
@@ -83,19 +84,42 @@ function LandingPage() {
             {/* second grid */}
             <div className="w-full relative h-full">
               <div className="container z-10 flex justify-center  ">
-              <CourseFeatured />
+                <CourseFeatured />
               </div>
               <img
-                  src="/images/shape/shape_152.svg"
-                  alt="shape"
-                  className="absolute z-0 transform translate-x-[-50%] translate-y-[-50%] top-[46%] left-[50%] "
-                />
-                <img
-                  src="/images/shape/shape_153.svg"
-                  alt="shape"
-                  className="lazy-img bottom-[8%] absolute right-[-7%]"
-                />
+                src="/images/shape/shape_152.svg"
+                alt="shape"
+                className="absolute z-0 transform translate-x-[-50%] translate-y-[-50%] top-[46%] left-[50%] "
+              />
+              <img
+                src="/images/shape/shape_153.svg"
+                alt="shape"
+                className="lazy-img bottom-[8%] absolute right-[-7%]"
+              />
             </div>
+          </div>
+        </div>
+      </div>
+      {/* feature section 4  */}
+      <div className="relative pt-[80px] pb-[80px] bg-[#fbf4ee] lg:pt-[130px] lg:pb-[180px] mt-[180px] ">
+        <div className="absolute z-10 right-[16%] top-[-8%] text-center w-[9.5%] min-w-[130px]">
+          <img
+            src="/images/shape/shape_154.svg"
+            alt="media"
+            className="rotate"
+          />
+          <div className="text-[36px] leading-[0.72em] absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]">
+            A+ <br />
+            <span className="text-[0.44em]">Courses</span>
+          </div>
+        </div>
+        {/* rating box end */}
+        <div className="w-full h-full">
+          <div className="relative px-10 w-full h-full">
+            <div className="mb-[40px]">
+              <h2 className=" text-4xl md:text-5xl lg:text-6xl font-Gordita font-medium text-black">Featured Courses</h2>
+            </div>
+            <CourseFilter />
           </div>
         </div>
       </div>

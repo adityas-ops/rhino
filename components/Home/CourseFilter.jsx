@@ -117,7 +117,7 @@ const CourseFilter = () => {
   return (
     <>
       <ul
-        className="flex w-full  border-b-0 pb-[40px] lg:mb-[80px] md:mb-[30px]"
+        className="flex w-full  border-b-0 pb-[40px] lg:mb-[30px] md:mb-[10px]"
         data-aos="fade-up"
       >
         <ul className="w-[60%] justify-between text-center flex flex-wrap uppercase">

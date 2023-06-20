@@ -106,3 +106,20 @@ body .btn-eighteen a:hover {
     top: -6px;
     left: -6px;
 }
+
+.card-style-nineteen:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.card-style-nineteen:hover:before {
+    opacity: 1;
+}

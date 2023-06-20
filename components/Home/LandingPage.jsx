@@ -3,6 +3,7 @@ import React from "react";
 import Seo from "../common/Seo";
 import Accord from "./Accord";
 import CourseCategory from "./CourseCategory";
+import CourseFeatured from "./CourseFeatured";
 import FeatureBook from "./FeatureBook";
 import Hero from "./Hero";
 
@@ -64,24 +65,36 @@ function LandingPage() {
       <div className="w-full h-full mt-[60px] lg:mt-[150px]">
         <div className="container mx-auto px-4 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            <div className="pt-[10px] md:pt-[20px] lg:[30px]">
+            <div className="">
               <div className="uppercase  text-lg  font-Gordita tracking-[2px] text-gray-400 mb-2">
                 CHoose your path
               </div>
-              <h2 className="text-6xl  font-Gordita font-medium mt-2 text-black ">
+              <h2 className="md:text-6xl text-4xl  font-Gordita font-medium mt-2 text-black ">
                 What’s your goal?
               </h2>
               <Accord />
               <Link href="#">
-                <button className="mt-[40px]  py-3 px-10 rounded font-Gordita font-[500] bg-black text-white lg:mt-[50px]">
+                <button className="mt-[70px]  py-3  px-10 rounded font-Gordita font-[500] bg-black text-white lg:mt-[50px]">
                   Explorer All
                 </button>
               </Link>
             </div>
 
             {/* second grid */}
-            <div>
-              
+            <div className="w-full relative h-full">
+              <div className="container z-10 flex justify-center  ">
+              <CourseFeatured />
+              </div>
+              <img
+                  src="/images/shape/shape_152.svg"
+                  alt="shape"
+                  className="absolute z-0 transform translate-x-[-50%] translate-y-[-50%] top-[46%] left-[50%] "
+                />
+                <img
+                  src="/images/shape/shape_153.svg"
+                  alt="shape"
+                  className="lazy-img bottom-[8%] absolute right-[-7%]"
+                />
             </div>
           </div>
         </div>

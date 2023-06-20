@@ -5,6 +5,7 @@ import Accord from "./Accord";
 import CourseCategory from "./CourseCategory";
 import CourseFeatured from "./CourseFeatured";
 import CourseFilter from "./CourseFilter";
+import FeatureBlock2 from "./FeatureBlock2";
 import FeatureBook from "./FeatureBook";
 import Hero from "./Hero";
 import HowToStartBlock from "./HowToStartBlock";
@@ -104,7 +105,7 @@ function LandingPage() {
       </div>
       {/* feature section 4  */}
       <div className="relative pt-[80px] pb-[80px] bg-[#fbf4ee] lg:pt-[130px] lg:pb-[180px] mt-[180px] ">
-        <div className="absolute z-10 right-[16%] top-[-8%] text-center w-[9.5%] min-w-[130px]">
+        <div className="absolute z-10 right-[16%] top-[-6%] text-center w-[9.5%] min-w-[130px]">
           <img
             src="/images/shape/shape_154.svg"
             alt="media"
@@ -117,7 +118,7 @@ function LandingPage() {
         </div>
         {/* rating box end */}
         <div className="w-full h-full">
-          <div className="relative px-10 w-full h-full">
+          <div className="relative px-10 w-full h-full overflow-x-hidden">
             <div className="mb-[40px]">
               <h2 className=" text-4xl md:text-5xl lg:text-6xl font-Gordita font-medium text-black">
                 Featured Courses
@@ -147,6 +148,8 @@ function LandingPage() {
           </div>
         </div>
       </div>
+      {/*  feature section  */}
+      <FeatureBlock2/>
     </>
   );
 }

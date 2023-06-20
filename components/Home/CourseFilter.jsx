@@ -208,9 +208,10 @@ const CourseFilter = () => {
         </ul>
       </ul>
       {/* close buttons  */}
+      <div className="lg:w-[114vw] relative w-[150vw] overflow-x-hidden translate-x-[-25vw] transform lg:translate-x-[-12vw]">
       <div className="my-0 mx-[-12px] lg:mx-[-40px] w-[calc(1320px + 22vw)]">
         <div className="tab-content w-full  z-10 relative  ">
-        <div >
+        <div className="mt-10" >
           <Slider {...settings} arrows={false}  >
             {filteredItems.map((course) => (
               <div className="py-0 px-[20px] z-20 w-full h-full " key={course.id}>
@@ -221,6 +222,7 @@ const CourseFilter = () => {
                       height={222}
                       src={course.imgSrc}
                       alt="media"
+                      // className="w-[100px]"
                       
                     />
                   </div>
@@ -274,6 +276,7 @@ const CourseFilter = () => {
           </Slider>
           </div>
         </div>
+      </div>
       </div>
     </>
   );

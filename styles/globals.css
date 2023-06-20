@@ -136,6 +136,18 @@ body .btn-eighteen a:hover {
    width: 100%;
 }
 
+.tab-content1:before {
+    content: "";
+    position: absolute;
+    bottom: 00px;
+    right: 0;
+    height: 450px;
+    background: url(/images/assets/bg-14.svg);
+    background-repeat: repeat-x;
+    /* background-repeat: repeat-y; */
+    z-index: -1;
+   width: 100%;
+}
 .activeStar{
     color: #ffce4c;
 }
@@ -157,4 +169,9 @@ body .btn-eighteen a:hover {
   /* Rest of your CSS rules */
 .active{
 border: 1px solid black;
+}
+
+
+h2{
+    line-height: 100px;
 }

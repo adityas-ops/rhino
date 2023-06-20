@@ -8,6 +8,7 @@ import CourseFilter from "./CourseFilter";
 import FeatureBook from "./FeatureBook";
 import Hero from "./Hero";
 import HowToStartBlock from "./HowToStartBlock";
+import Testimonial from "./Testimonial";
 
 function LandingPage() {
   return (
@@ -118,7 +119,9 @@ function LandingPage() {
         <div className="w-full h-full">
           <div className="relative px-10 w-full h-full">
             <div className="mb-[40px]">
-              <h2 className=" text-4xl md:text-5xl lg:text-6xl font-Gordita font-medium text-black">Featured Courses</h2>
+              <h2 className=" text-4xl md:text-5xl lg:text-6xl font-Gordita font-medium text-black">
+                Featured Courses
+              </h2>
             </div>
             <CourseFilter />
           </div>
@@ -126,7 +129,24 @@ function LandingPage() {
       </div>
       {/* feature section 5 */}
       <HowToStartBlock />
-      
+      {/* feedback section start */}
+      <div className="relative mt-[80px] lg:mt-[130px] pb-[25px] overflow-x-hidden ">
+        <div className="container mx-auto px-4 lg:px-16">
+          <div className="text-center mb-[60px] w-full h-full flex justify-center">
+            <h2 className="md:text-6xl   pb-10 leading-[6.09rem]  h-full text-4xl font-[500] font-Gordita text-black">
+              What’s our client Say <p className="mt-5"> About us.</p>
+            </h2>
+          </div>
+        </div>
+        {/* end container */}
+        <div className="lg:w-[124vw] relative w-[150vw] overflow-x-hidden translate-x-[-25vw] transform lg:translate-x-[-12vw]">
+          <div className="lg:w-[calc(1320px + 30vw)]  overflow-x-hidden w-[calc(1320px + 25vw)] tab-content1  mx-[-20px]">
+            <div className="py-0 px-[80px] overflow-x-hidden ">
+            <Testimonial />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

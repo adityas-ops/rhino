@@ -238,7 +238,7 @@ const CourseFilter = () => {
                       {course.title}
                     </a>
                     <div className="course-review mt-[17px] flex items-center">
-                      <ul className="style-none d-flex rating">
+                      <ul className="flex rating">
                         {Array.from({ length: course.rating }, (_, i) => (
                           <li className="activeStar" key={i}>
                             <AiFillStar/>

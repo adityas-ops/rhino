@@ -32,7 +32,11 @@ module.exports = {
         backgroundImage: {
           'feature':"url(/images/assets/bg-13.png)",
           'feature2':"url(/images/assets/bg-14.svg)"
-        }
+        },
+          // //  color
+          // colors: {
+          //     contact:""
+          // }
     }
   },
   daisyui: {

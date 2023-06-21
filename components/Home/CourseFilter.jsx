@@ -88,8 +88,8 @@ const CourseFilter = () => {
 
   var settings = {
     infinite: false,
-    autoplay: false,
-    speed: 500,
+    autoplay: true,
+    speed: 200,
     slidesToShow: 4,
     slidesToScroll: 1,
     responsive: [

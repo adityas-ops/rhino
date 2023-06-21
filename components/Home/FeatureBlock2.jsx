@@ -4,7 +4,7 @@ import React from "react";
 function FeatureBlock2() {
   return (
     <>
-      <div className="lg:pt-[130px] pt-[70px] overflow-x-hidden">
+      <div className="lg:pt-[130px] pt-[70px] flex items-center justify-center overflow-x-hidden">
         <div className="container  mx-16">
           <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="flex items-center justify-center">

@@ -171,7 +171,17 @@ body .btn-eighteen a:hover {
 border: 1px solid black;
 }
 
+/*  contact list */
 
-h2{
-    line-height: 100px;
+.sc-title-two:before {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 1px;
+    background: #ff3294;
+    /* left: -33%; */
+    top: 14px;
+    left: -33%;
 }
+
+

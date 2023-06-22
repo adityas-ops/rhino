@@ -11,7 +11,7 @@ const MainMenu = () => {
                 <Link href="/" className={`${pathname === "/" ? "text-[#ff733b]" : "text-black"} hover:text-[#ff733b]`}>
                 Home
                 </Link>
-                <Link href="/courses" className={`${pathname === "/corses" ? "text-[#ff733b]" : "text-black"} hover:text-[#ff733b]`}>
+                <Link href="/courses" className={`${pathname === "/courses" ? "text-[#ff733b]" : "text-black"} hover:text-[#ff733b]`}>
                 Courses
                 </Link>
                 <Link href="/blogs" className={`${pathname === "/blogs" ? "text-[#ff733b]" : "text-black"} hover:text-[#ff733b]`}>

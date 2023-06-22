@@ -184,4 +184,40 @@ border: 1px solid black;
     left: -33%;
 }
 
+/* courses */
+.sc-title-two{
+    padding-left: 40px;
+    margin-bottom: 20px;
+}
 
+.sc-title-two:before{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 1px;
+    background: #ff3294;
+    left: 0;
+    top: 14px;
+}
+
+/*  */
+.g-control-nav-two li {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #313131;
+    display: inline-block;
+    padding: 0 8px;
+    line-height: 31px;
+    border: 2px solid transparent;
+    margin: 0 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.g-control-nav-two li.is-checked {
+    border-color: #313131;
+}
+.card:hover .pj-name{
+    text-decoration: underline;
+}
